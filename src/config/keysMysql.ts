@@ -1,10 +1,13 @@
+
 export default {
 
     database: {
         host: 'localhost',
         user: 'root',
-        password: 'cruzroja2019',
-        database: 'comercial'
+        password: 'rAFAEL1987',
+        database: 'metrica'
     }
 
 }
+
+

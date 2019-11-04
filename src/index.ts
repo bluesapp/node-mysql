@@ -3,8 +3,10 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import indexRoutes from './routes/indexRoutes';
-import gamesRoutes from './routes/gamesRoutes';
-import registrosRoutes from './routes/registrosRoutes';
+// import registrosRoutes from './routes/registrosRoutes';
+import gtmRoutes from './routes/gtmRoutes'
+import psiRutes from './routes/psiRutes';
+import psiDBRutes from './routes/psiDBrRoutes';
 
 class Server {
 
@@ -27,8 +29,11 @@ class Server {
 
     routes(): void {
         this.app.use('/', indexRoutes);
-        this.app.use('/api/games', gamesRoutes);
-        this.app.use('/api/registros', registrosRoutes);
+      
+        // this.app.use('/api/registros', registrosRoutes);
+        this.app.use('/api/gtm', gtmRoutes)
+        this.app.use('/api/psi', psiRutes)
+        this.app.use('/api/psidb', psiDBRutes)
     }
 
     start() {
