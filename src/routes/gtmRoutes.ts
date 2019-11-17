@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 
-import gtmController from "../controllers/gtmControllers";
+// import gtmController from "../controllers/gtmControllers";
 
 class GtmRoutes {
 
@@ -11,8 +11,8 @@ class GtmRoutes {
     }
 
     config() {
-        this.router.get('/', gtmController.getApiGTMetrix);
-        this.router.get('/lista', gtmController.list);
+        // this.router.get('/', gtmController.getApiGTMetrix);
+        // this.router.get('/lista', gtmController.list);
    
     }
 
