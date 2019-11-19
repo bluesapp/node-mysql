@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/bdd1335d-7d11-4415-a4d9-817793de1fcf/resourceGroups/plataformas_rg/providers/Microsoft.Web/sites/PerformanceATG",
+    "appService.deploySubpath": "build"
+}
